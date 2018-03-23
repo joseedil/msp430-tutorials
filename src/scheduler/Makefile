@@ -1,4 +1,4 @@
-OBJECTS = scheduler.o
+OBJECTS = pmm.o scheduler.o
 
 TI_TOOLS = ~/2-development/ti/tools/gcc
 MSPDEBUG_DIR = ~/2-development/ti/tools/mspdebug
