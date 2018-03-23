@@ -12,7 +12,7 @@ CC       = $(GCC_DIR)/msp430-elf-gcc
 GDB      = $(GCC_DIR)/msp430-elf-gdb
 MSPDEBUG = $(MSPDEBUG_DIR)/mspdebug
 
-CFLAGS = -I $(SUPPORT_FILE_DIRECTORY) -mmcu=$(DEVICE) -O0 -g3 -ggdb -gdwarf-2
+CFLAGS = -I $(SUPPORT_FILE_DIRECTORY) -mmcu=$(DEVICE) -O2 -g3 -ggdb -gdwarf-2
 LFLAGS = -L $(SUPPORT_FILE_DIRECTORY) -T $(DEVICE).ld
 
 MSPDEBUG_FLAGS = tilib --allow-fw-update
